@@ -1,5 +1,4 @@
+Make sure these files are present
 credentials.json
 info
 mycreds.txt
-
-are req
