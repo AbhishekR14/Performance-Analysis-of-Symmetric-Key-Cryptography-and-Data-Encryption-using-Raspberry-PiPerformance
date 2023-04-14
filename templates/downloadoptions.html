@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Upload new File</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<style>
+  .btn-group button {
+    background-color: #04AA6D; /* Green background */
+    border: 1px solid green; /* Green border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+  }
+  
+  /* Clear floats (clearfix hack) */
+  .btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+  }
+  
+  /* Add a background color on hover */
+  .btn-group button:hover {
+    background-color: #3e8e41;
+  }
+  </style>
+<body>
+  <section class="hero is-info is-fullheight">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-half">
+            <h1 style="color:black;font-size:40px;">File Found!</h1>
+            <br>
+            <h2 style="font-size:20px">Select an option</h2>
+            <br>
+            <div class="btn-group">
+              <form method ="post" action="/">
+                <button type="submit" name="viewdownload" value="viewdownload"><a href="{{ url_for('viewdownload') }}">View and Download as .txt</a></button>
+                <button type="submit" name="viewdownload" value="viewdownload"><a href="{{ url_for('viewdownloaddox') }}">View and Download as .doxc</a></button>
+                <button type="submit" name="printdownload" value="printdownload"><a href="{{ url_for('printdownload') }}">Print the file</a></button>
+                <br>
+                <br>
+                <button type="submit" name="profile" value="profile"><a href="{{ url_for('profile') }}">Go Back</a></button>
+              </form> 
+            </div>
+            
+
+              </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

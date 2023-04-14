@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  </head>
+  <style>
+    .btn-group button {
+      background-color: #2cb482; /* Green background */
+      border: 1px solid green; /* Green border */
+      color: white; /* White text */
+      padding: 10px 24px; /* Some padding */
+      cursor: pointer; /* Pointer/hand icon */
+      float: left; /* Float the buttons side by side */
+    }
+    
+    /* Clear floats (clearfix hack) */
+    .btn-group:after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    
+    .btn-group button:not(:last-child) {
+      border-right: none; /* Prevent double borders */
+    }
+    
+    /* Add a background color on hover */
+    .btn-group button:hover {
+      background-color: #3daf41;
+    }
+    </style>
+  <body">
+    <section class="hero is-success is-fullheight">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+          File Not Found!
+          </h1>
+          <p style="font-size:20px">{{output}}</p>
+          <br>
+          <div class="btn-group">
+            <form method ="post" action="/">
+              <button type="submit" name="profile" value="profile"><a href="{{ url_for('profile') }}" style="font-size:17px">Go Back</a></button>
+            </form>
+        </div>
+         
+          </div>
+      </div>
+    </section>
+  </body>
+</html>

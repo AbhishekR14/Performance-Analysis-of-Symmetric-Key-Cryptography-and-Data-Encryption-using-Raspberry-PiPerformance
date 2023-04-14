@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Upload new File</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<style>
+  .btn-group button {
+    background-color: #04AA6D; /* Green background */
+    border: 1px solid green; /* Green border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+  }
+  
+  /* Clear floats (clearfix hack) */
+  .btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+  }
+  
+  /* Add a background color on hover */
+  .btn-group button:hover {
+    background-color: #3e8e41;
+  }
+  </style>
+<body>
+  <section class="hero is-info is-fullheight">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-half">
+            <h1 style="color:black;font-size:40px;">Welcome!</h1>
+            <br>
+            <br>
+            <h2 style="font-size:20px">Select an option</h2>
+            <br>
+            <div class="btn-group">
+              <form method ="post" action="/">
+                <button type="submit" name="Upload" value="Upload"><a href="{{ url_for('upload_file') }}">Upload</a></button>
+                <button type="submit" name="Download" value="Download"><a href="{{ url_for('download') }}">Download</a></button>
+                <button type="submit" name="printfile" value="printfile"><a href="{{ url_for('printfile') }}">Print a File</a></button>
+                <button type="submit" name="Log_out" value="Log_out"><a href="{{ url_for('login') }}">Log Out</a></button>
+              </form> 
+            </div>
+            
+
+              </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

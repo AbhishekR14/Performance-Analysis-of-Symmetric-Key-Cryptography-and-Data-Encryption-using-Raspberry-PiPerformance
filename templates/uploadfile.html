@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Upload new File</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+
+<body>
+  <section class="hero is-info is-fullheight">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-half">
+            <h1 style="color:black;font-size:40px;">Upload new File!</h1>
+            <br>
+            <br>
+            <p style="font-size:15px">Upload a .txt or .docx file</p>
+            <form method=post enctype=multipart/form-data>
+                <input type=file name=file style="font-size:17px">
+                <input type=submit value=Upload style="font-size:17px">
+                <button type="submit" name="profile" value="profile"><a href="{{ url_for('profile') }}" style="font-size:17px">Go Back</a></button>
+              </form>
+              <br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
