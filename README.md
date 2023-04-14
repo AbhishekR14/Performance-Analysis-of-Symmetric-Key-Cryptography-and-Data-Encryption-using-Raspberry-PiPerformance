@@ -6,5 +6,4 @@ For the same, we have developed a personalized web server for offices and homes 
 
 PLEASE OPEN THE **TEST.PY** TO RUN THE CODE
   Then you will get the locally hosted ip for the website, copy and paste that in your web browser to see the log in page.
-    The log in credentials to test are :- username: abc@xyz.com   
-                                          password: abc123
+    The log in credentials to test are :- username: abc@xyz.com  and  password: abc123
